@@ -62,7 +62,7 @@
     for (int i = 0; i<9; i ++) {
         
         UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(7+i%3*((imageViewFFF)+3)+3, 30+i/3*((imageViewFFF)+3)+3, (imageViewFFF), (imageViewFFF))];
-        CGRect rect = CGRectMake(i/3*(imageFFF), i%3*(imageFFF), (imageFFF), (imageFFF));
+        CGRect rect = CGRectMake(i%3*(imageFFF), i/3*(imageFFF), (imageFFF), (imageFFF));
         
         UIImage *ig = self.image;
         UIImage *subImage = [self clipImage:ig inRect:rect];
